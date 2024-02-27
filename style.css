@@ -13,4 +13,13 @@
 
 body{
     background-color: var(--verde-escuro);
+    color: var(--pastel);
+    font-family: var(--font-texto);
+}
+
+.conteudo-principal{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
