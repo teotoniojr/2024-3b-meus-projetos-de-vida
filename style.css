@@ -6,6 +6,7 @@
     --verde: #436850;
     --verde-claro: #ADBC9F;
     --pastel: #FBFADA;
+    --preto: #000000;
     --font-titulo:"Kode Mono", monospace;
     --font-texto: "Playfair Display", serif;
 
@@ -25,4 +26,59 @@ body{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 36px;
+}
+
+
+.titulo-principal span{
+    color: var(--verde-claro);
+}
+
+.botao{
+    font-family: var(--font-texto);
+    font-size: 18px;
+    background-color: var(--verde-claro);
+    color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 4px solid var(--verde);
+    border-left: 4px solid var(--verde);
+    border-right: 4px solid var(--verde);
+    border-top: none;
+}
+.botoes {
+    display: block;
+}
+
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
+.botao:last-child{
+    border-radius: 0 0 40px 40px;
+}
+
+.ativo{
+    background-color: var(--verde);
+    border-bottom: 4px solid var(--preto);
+}
+
+@media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    } 
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0; 
+    }
 }
